@@ -77,77 +77,107 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-xm-qMC">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="16" y="88" width="382" height="686"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y8p-y2-5jp">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="228.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP9-RJ-CcS" userLabel="slowButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="258"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Slow"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="ARD-dz-Hy0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kai-SQ-JsY" userLabel="fastButton">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="258"/>
+                                                <rect key="frame" x="191" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Fast"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="iLK-K3-aLV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wM7-hh-zLp">
-                                        <rect key="frame" x="0.0" y="258" width="414" height="258"/>
+                                        <rect key="frame" x="0.0" y="228.5" width="382" height="229"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-Vs-QbD" userLabel="HighPitch">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="258"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="229"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="Tc1-r1-G3Y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-aQ-X9G" userLabel="LowPitch">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="258"/>
+                                                <rect key="frame" x="191" y="0.0" width="191" height="229"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="mLH-Fn-uzd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-Rz-MyC">
-                                        <rect key="frame" x="0.0" y="516" width="414" height="258"/>
+                                        <rect key="frame" x="0.0" y="457.5" width="382" height="228.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-Br-0Re" userLabel="EchoBotton">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="258"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Echo"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="gVh-Ci-ZHT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-S8-Q8v" userLabel="ReverbButton">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="258"/>
+                                                <rect key="frame" x="191" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
+                                                <connections>
+                                                    <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="QYr-J1-Ryu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm1-Qo-Cvs">
-                                <rect key="frame" x="175" y="798" width="64" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ram-mP-gOO" userLabel="Stop Button">
+                                <rect key="frame" x="175" y="782" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="h58-qW-q5B"/>
-                                    <constraint firstAttribute="height" constant="64" id="o9H-i3-TLD"/>
+                                    <constraint firstAttribute="height" constant="64" id="3ws-T3-CG4"/>
+                                    <constraint firstAttribute="width" constant="64" id="sR0-4z-Y2e"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="fZm-Tt-3e5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YXx-F3-gBv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YXx-F3-gBv" firstAttribute="bottom" secondItem="CNl-xm-qMC" secondAttribute="bottom" id="E9g-y5-iw3"/>
-                            <constraint firstItem="Xm1-Qo-Cvs" firstAttribute="centerX" secondItem="yke-SP-ilc" secondAttribute="centerX" id="I0e-cH-sQ6"/>
-                            <constraint firstItem="YXx-F3-gBv" firstAttribute="bottom" secondItem="Xm1-Qo-Cvs" secondAttribute="bottom" id="Pzi-ef-fsR"/>
+                            <constraint firstItem="ram-mP-gOO" firstAttribute="top" secondItem="CNl-xm-qMC" secondAttribute="bottom" constant="8" id="IOO-Nh-hML"/>
                             <constraint firstItem="YXx-F3-gBv" firstAttribute="top" secondItem="CNl-xm-qMC" secondAttribute="top" id="Wj6-zV-ava"/>
-                            <constraint firstItem="YXx-F3-gBv" firstAttribute="trailing" secondItem="CNl-xm-qMC" secondAttribute="trailing" id="YCj-n6-HXO"/>
-                            <constraint firstItem="CNl-xm-qMC" firstAttribute="leading" secondItem="YXx-F3-gBv" secondAttribute="leading" id="anD-9J-SUc"/>
+                            <constraint firstItem="YXx-F3-gBv" firstAttribute="trailing" secondItem="CNl-xm-qMC" secondAttribute="trailing" constant="16" id="YCj-n6-HXO"/>
+                            <constraint firstItem="CNl-xm-qMC" firstAttribute="leading" secondItem="YXx-F3-gBv" secondAttribute="leading" constant="16" id="anD-9J-SUc"/>
+                            <constraint firstItem="ram-mP-gOO" firstAttribute="centerX" secondItem="yke-SP-ilc" secondAttribute="centerX" id="c2G-gX-zZ6"/>
+                            <constraint firstItem="YXx-F3-gBv" firstAttribute="bottom" secondItem="ram-mP-gOO" secondAttribute="bottom" constant="16" id="k8t-W9-ZtW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="R42-a6-BU7"/>
+                    <connections>
+                        <outlet property="chipmunkButton" destination="1b1-Vs-QbD" id="bcI-FS-dG1"/>
+                        <outlet property="echoButton" destination="zPJ-Br-0Re" id="K6o-19-koF"/>
+                        <outlet property="rabbitButton" destination="kai-SQ-JsY" id="cLX-IB-fFi"/>
+                        <outlet property="reverbButton" destination="pBD-S8-Q8v" id="PJo-9B-2Wd"/>
+                        <outlet property="snailButton" destination="VP9-RJ-CcS" id="kXq-RY-60P"/>
+                        <outlet property="stopButton" destination="ram-mP-gOO" id="znw-Bs-9de"/>
+                        <outlet property="vaderButton" destination="Wdo-aQ-X9G" id="ruj-sz-fFg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49D-Dn-GvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
