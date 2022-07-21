@@ -90,7 +90,7 @@
                                                     <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="ARD-dz-Hy0"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kai-SQ-JsY" userLabel="fastButton">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kai-SQ-JsY" userLabel="fastButton">
                                                 <rect key="frame" x="191" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Fast"/>
@@ -103,7 +103,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wM7-hh-zLp">
                                         <rect key="frame" x="0.0" y="228.5" width="382" height="229"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-Vs-QbD" userLabel="HighPitch">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-Vs-QbD" userLabel="HighPitch">
                                                 <rect key="frame" x="0.0" y="0.0" width="191" height="229"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
@@ -111,7 +111,7 @@
                                                     <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="Tc1-r1-G3Y"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-aQ-X9G" userLabel="LowPitch">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-aQ-X9G" userLabel="LowPitch">
                                                 <rect key="frame" x="191" y="0.0" width="191" height="229"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
@@ -124,7 +124,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xzQ-Rz-MyC">
                                         <rect key="frame" x="0.0" y="457.5" width="382" height="228.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-Br-0Re" userLabel="EchoBotton">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-Br-0Re" userLabel="EchoBotton">
                                                 <rect key="frame" x="0.0" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Echo"/>
@@ -132,7 +132,7 @@
                                                     <action selector="playSoundForButton:" destination="oc1-SJ-bnQ" eventType="touchUpInside" id="gVh-Ci-ZHT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-S8-Q8v" userLabel="ReverbButton">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-S8-Q8v" userLabel="ReverbButton">
                                                 <rect key="frame" x="191" y="0.0" width="191" height="228.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
@@ -175,7 +175,7 @@
                         <outlet property="rabbitButton" destination="kai-SQ-JsY" id="cLX-IB-fFi"/>
                         <outlet property="reverbButton" destination="pBD-S8-Q8v" id="PJo-9B-2Wd"/>
                         <outlet property="snailButton" destination="VP9-RJ-CcS" id="kXq-RY-60P"/>
-                        <outlet property="stopButton" destination="ram-mP-gOO" id="znw-Bs-9de"/>
+                        <outlet property="stopButton" destination="ram-mP-gOO" id="njy-uy-T2P"/>
                         <outlet property="vaderButton" destination="Wdo-aQ-X9G" id="ruj-sz-fFg"/>
                     </connections>
                 </viewController>
